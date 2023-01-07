@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+  </head>
+  <body>
+    <div id="content"></div>
+    <script type="text/javascript">
+      // var h1 = React.createElement("h1", null, "Hello world!");
+      // ReactDOM.render(h1, document.getElementById("content"));
+      // без h1 variable
+      ReactDOM.render(
+        React.createElement('h1', null, 'Hello world!'),
+        document.getElementById('content')
+      )
+    </script>
+  </body>
+</html>

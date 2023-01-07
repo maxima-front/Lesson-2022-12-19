@@ -1,0 +1,27 @@
+{
+  "name": "proj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-method": "./node_modules/.bin/babel method/jsx/script.jsx -o method/js/script.js -w",
+    "build-js": "./node_modules/.bin/babel js-jsx/jsx/script.jsx -o js-jsx/js/script.js -w",
+    "build-jsx": "./node_modules/.bin/babel jsx/jsx/script.jsx -o jsx/js/script.js -w",
+    "build-class": "./node_modules/.bin/babel class/jsx/script.jsx -o class/js/script.js -w",
+    "build": "npm run build-method & npm run build-js & npm run build-jsx & npm run build-class"
+  },
+  "keywords": [
+    "react.js"
+  ],
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "react"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "6.24.1",
+    "babel-preset-react": "6.24.1"
+  }
+}
